@@ -24,7 +24,24 @@ for col in num_columns_discrete:
     modus_value = str(df[col].mode()[0])
     df[col] = df[col].astype(str).apply(lambda x: x.replace('0', modus_value))
     df[col] = df[col].astype(int)
-    
+
+# transform not normally distributed data to normally distributed
+num_columns_continue = [column for column in num_columns if column not in num_columns_discrete and column not in ['satisfaction']]
+for col in num_columns_continue:
+    plt.figure()
+    sns.histplot(data=df, x=col)
+## the Flight Distance need to transform to get the more normally distributed
+## here Iam using two type of transform, and compare the transform result
+FD_log = np.log(df['Flight Distance'])
+plt.figure()
+sns.histplot(FD_log)
+import scipy.stats as stats
+FD_boxcox = stats.boxcox(df['Flight Distance'])
+plt.figure()
+sns.histplot(FD_boxcox)
+## from the result log transfrom give more normally distributed, so I choose log transform method
+df['Flight Distance'] = FD_log
+
 # encode string categorical column into numeric
 cat_columns = [column for column in df.columns if column not in num_columns]
 def encode_category(data, column, target):
