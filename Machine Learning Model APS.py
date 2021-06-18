@@ -47,5 +47,13 @@ def model_selection(X_train, y_train, X_test, y_test, models):
 
 # import the models
 from sklearn.linear_model import LogisticRegression, RidgeClassifier
+from sklearn.svm import LinearSVC, SVC
+from sklearn.neighbors import KNeighborsClassifier, RadiusNeighborsClassifier
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
 
-models = [LogisticRegression(), RidgeClassifier(alpha=0.005), ]
+models = [LogisticRegression(), RidgeClassifier(alpha=0.005), LinearSVC(), SVC(), KNeighborsClassifier(),
+          RadiusNeighborsClassifier(), GaussianProcessClassifier(), DecisionTreeClassifier(), RandomForestClassifier(),
+          AdaBoostClassifier(), MLPClassifier()]
