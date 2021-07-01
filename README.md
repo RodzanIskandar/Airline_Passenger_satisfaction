@@ -34,6 +34,10 @@ To get understand the data, I do some Data Analysis as follows:
 - Discrete Numeric Columns and Continuous Numeric Columns Analysis.
 - Categorical columns analysis.
 - Correlation between columns analysis.
+
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/Data_Analysis1.png)
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/Data_Analysis2.png)
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/Data_Analysis4.png)
 # Feature Engineering
 - Fill the NA columns with median of NA_columns.
 - Transform the 0 value (Not Applicable) with modus of the columns.
@@ -51,3 +55,7 @@ In the Feature Selection, Iam using filter methods to get the essential features
 - Check the model fitting
 - Hyperparameter tuning the model using GridSearchCV and RandomizedSearchCV
 - Compare the two default models and models after tuning as the final recap.
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/ML1.png)
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/ML2.png)
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/ML3.png)
+![](https://github.com/RodzanIskandar/Airline_Passenger_satisfaction/blob/main/images/ML4.png)
