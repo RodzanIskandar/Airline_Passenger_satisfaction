@@ -27,7 +27,7 @@ The Dataset contains 25 columns as follows:
 21. Departure Delay in Minutes: Minutes delayed when departure.
 22. Arrival Delay in Minutes: Minutes delayed when Arrival.
 23. Satisfaction: Airline satisfaction level(Satisfaction, neutral or dissatisfaction).
-# Data Analysis
+# Exploratory Data Analysis
 To get understand the data, I do some Data Analysis as follows:
 - Imbalance check within satified and not satisfied dataset.
 - Not Available data analysis.
