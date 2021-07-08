@@ -1,4 +1,4 @@
-# Airline_Passenger_satisfaction
+# Airline Passenger Satisfaction
 # Overview
 The Dataset contains an Airline Satisfaction Passenger survey from kaggle dataset [https://www.kaggle.com/teejmahal20/airline-passenger-satisfaction](https://www.kaggle.com/teejmahal20/airline-passenger-satisfaction). The purpose of this analysis is to get the insight about what factors are highly correlated to a satisfied (or dissatisfied) passenger, and also can the data predict the passenger satisfaction. 
 From Data Analysis result, The Airlines passenger satisfaction are dominant by the older people within range of the age between 40 - 60 for the business travel using business class wihtin long flying range distance, which supported and reinforced by good services score for older people like seat comfort, on-board service and leg room. and also in Machine Learning modeling, model got the 96% precision to predict passenger satisfaction using Support Vector Classifier.
